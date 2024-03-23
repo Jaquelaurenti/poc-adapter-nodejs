@@ -1,17 +1,6 @@
 // externalApis/externalApiClient.js
 
 /**
- * @swagger
- * components:
- *   schemas:
- *     ExternalApiResponse:
- *       type: object
- *       properties:
- *         data:
- *           type: string
- */
-
-/**
  * Cliente para interagir com a API externa.
  */
  class ExternalApiClient {

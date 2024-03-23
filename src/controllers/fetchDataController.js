@@ -1,7 +1,7 @@
 // controllers/fetchDataController.js
 
 const DataModel = require('../models/dataModel');
-const fetchDataUseCase = require('../useCases/fetchDataUseCase');
+const fetchDataUseCase = require('../useCases/fetchDataUseCase')
 
 class FetchDataController {
   constructor(fetchDataUseCase) {
