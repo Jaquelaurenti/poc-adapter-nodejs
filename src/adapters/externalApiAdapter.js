@@ -3,17 +3,21 @@
 const axios = require('axios');
 
 /**
- * Adaptador para interagir com a API externa (API do Pokémon neste exemplo).
+ * Adaptador para interagir com uma API externa genérica.
  */
 class ExternalApiAdapter {
+  constructor(apiUrl) {
+    this.apiUrl = apiUrl;
+  }
+
   /**
-   * Busca dados da API externa (API do Pokémon neste exemplo).
+   * Busca dados da API externa.
    * @returns {Promise<object>} Dados buscados da API externa.
    */
   async fetchData() {
     try {
-      // Fazendo uma chamada GET à API do Pokémon para obter informações sobre um Pokémon específico (Charizard neste exemplo)
-      const response = await axios.get('https://pokeapi.co/api/v2/pokemon/charizard');
+      // Fazendo uma chamada GET à API externa
+      const response = await axios.get(this.apiUrl);
       // Retornando os dados obtidos da API
       return response.data;
     } catch (error) {
