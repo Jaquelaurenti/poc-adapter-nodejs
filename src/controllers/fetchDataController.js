@@ -8,15 +8,17 @@ class FetchDataController {
     this.fetchDataUseCase = fetchDataUseCase;
   }
 
-  async fetchData(req, res) {
+
+  async fetchData(req, res, next) {
     try {
       const data = await this.fetchDataUseCase.execute();
       const formattedData = new DataModel(data); // Utilizando o modelo de dados
       res.json(formattedData);
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      next(error);
     }
   }
+  
 }
 
 module.exports = new FetchDataController(fetchDataUseCase);
