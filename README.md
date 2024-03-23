@@ -13,13 +13,13 @@ Neste exemplo, utilizamos o padrão Adapter para adaptar diferentes APIs externa
 ### Estrutura de Pastas e Arquivos
 A estrutura de pastas e arquivos da aplicação é a seguinte:
 
-adapters/: Contém os adaptadores que traduzem as interfaces das APIs externas para interfaces que nossa aplicação espera encontrar.
-concreteApis/: Contém classes que representam clientes para APIs específicas.
-controllers/: Contém controladores que lidam com as requisições HTTP e chamam os casos de uso correspondentes.
-externalApis/: Contém classes que representam clientes para APIs externas genéricas.
-models/: Contém definições de modelos de dados.
-routes/: Contém os arquivos de definição de rotas para a API.
-useCases/: Contém os casos de uso da aplicação.
+- adapters/: Contém os adaptadores que traduzem as interfaces das APIs externas para interfaces que nossa aplicação espera encontrar.
+- concreteApis/: Contém classes que representam clientes para APIs específicas.
+- controllers/: Contém controladores que lidam com as requisições HTTP e chamam os casos de uso correspondentes.
+- externalApis/: Contém classes que representam clientes para APIs externas genéricas.
+- models/: Contém definições de modelos de dados.
+- routes/: Contém os arquivos de definição de rotas para a API.
+- useCases/: Contém os casos de uso da aplicação.
 
 
 ### Como Testar
