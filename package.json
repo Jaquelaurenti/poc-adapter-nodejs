@@ -1,0 +1,21 @@
+{
+  "name": "poc-adapter-nodejs",
+  "version": "1.0.0",
+  "description": "poc para aprender o pattern adapter",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "dev": "nodemon --inspect src/app.js"
+  },
+  "author": "jaque laurenti",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "express": "^4.19.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
